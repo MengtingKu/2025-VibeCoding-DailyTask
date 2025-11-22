@@ -9,11 +9,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
   <!-- Icon（支援 iOS & Android） -->
-  <link rel="icon" type="image/png" href="/2025‑VibeCoding‑DailyTask/icon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/2025‑VibeCoding‑DailyTask/icon.png">
+  <link rel="icon" type="image/png" href="./icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon.png">
+
   <!-- manifest -->
-  <link rel="manifest" href="/2025‑VibeCoding‑DailyTask/manifest.webmanifest">
+  <link rel="manifest" href="./manifest.webmanifest">
+
   <title>狗狗歲數計算機</title>
 </head>
 
@@ -39,18 +42,20 @@
       <p>狗狗現在大約 <span class="highlight">2.7</span> 歲狗年齡，</p>
       <p>換算成人類年齡大約是 <span class="highlight">18.9</span> 歲。</p>
     </div>
-
   </div>
-  <script type="module" src="/2025‑VibeCoding‑DailyTask/src/main.js"></script>
+
+  <!-- 引入 main.js，這裡使用相對路徑 -->
+  <script type="module" src="./src/main.js"></script>
+
   <!-- 註冊 service worker（適用 GitHub Pages） -->
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/2025‑VibeCoding‑DailyTask/service-worker.js')
-        .then(() => console.log('SW registered'))
-        .catch(err => console.error('SW registration failed:', err));
+      // 使用相對路徑註冊 Service Worker，這樣能正確工作在 GitHub Pages 子目錄下
+      navigator.serviceWorker.register('./service-worker.js')
+        .then(() => console.log('Service Worker registered successfully.'))
+        .catch(err => console.error('Service Worker registration failed:', err));
     }
   </script>
-
 </body>
 
 </html>
