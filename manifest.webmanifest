@@ -1,0 +1,22 @@
+{
+  "name": "狗狗歲數計算機",
+  "short_name": "狗狗年齡",
+  "description": "輸入狗狗生日，計算狗年齡與人類年齡。",
+  "start_url": "/2025-VibeCoding-DailyTask/",
+  "scope": "/2025-VibeCoding-DailyTask/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8ea3ff",
+  "icons": [
+    {
+      "src": "/2025-VibeCoding-DailyTask/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/2025-VibeCoding-DailyTask/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
