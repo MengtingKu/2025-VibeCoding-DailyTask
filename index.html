@@ -10,10 +10,10 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <!-- Icon（支援 iOS & Android） -->
-  <link rel="icon" type="image/png" href="/icon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
+  <link rel="icon" type="image/png" href="/2025‑VibeCoding‑DailyTask/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/2025‑VibeCoding‑DailyTask/icon.png">
   <!-- manifest -->
-  <link rel="manifest" href="/2025-VibeCoding-DailyTask/manifest.webmanifest">
+  <link rel="manifest" href="/2025‑VibeCoding‑DailyTask/manifest.webmanifest">
   <title>狗狗歲數計算機</title>
 </head>
 
@@ -41,13 +41,16 @@
     </div>
 
   </div>
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/2025‑VibeCoding‑DailyTask/src/main.js"></script>
   <!-- 註冊 service worker（適用 GitHub Pages） -->
   <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/2025-VibeCoding-DailyTask/service-worker.js");
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/2025‑VibeCoding‑DailyTask/service-worker.js')
+        .then(() => console.log('SW registered'))
+        .catch(err => console.error('SW registration failed:', err));
     }
   </script>
+
 </body>
 
 </html>
